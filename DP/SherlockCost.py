@@ -21,7 +21,6 @@ def cost(B):
             new_list.append(0)
         dp_matrix.append(new_list)
 
-
     # compute result of each step
     for i in range(1,len(B),1):
         dp_matrix[0][i] = max(dp_matrix[0][i-1],dp_matrix[1][i-1]+abs(B[i-1]-1))
