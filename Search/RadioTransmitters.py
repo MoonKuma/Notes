@@ -12,7 +12,6 @@ x = list()
 for i in x_str:
     x.append(int(i))
 
-
 def radio_transmitters(x, k):
     count_list = list()
     x_sort = sorted(x)
@@ -34,6 +33,5 @@ def radio_transmitters(x, k):
         index = j + k + 1
         radio +=1
 
-    return radio
 
 print(radio_transmitters(x,k))
