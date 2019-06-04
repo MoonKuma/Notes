@@ -10,7 +10,6 @@
 # I tried implement one in fast find union model later
 
 
-
 def fast_find_union(matrix):
     """
     Using find union model to solve the problem
@@ -93,15 +92,16 @@ def connectedCell(matrix):
     :param matrix: input n*m matrix
     :return: the largest area
     """
-
     n_row = len(matrix)
     n_col = len(matrix[0])
     # checked is used to remember those area that has been searched
     # one can also set all those that has been searched into 0, which will change the matrix though
     checked = set()
     max_area = 0
+
     def pair_key(r,c):
         return str(r) + '|' + str(c)
+
     def get_area(r,c):
         if pair_key(r,c) in checked:
             return 0
@@ -136,7 +136,6 @@ if __name__ == '__main__':
 
     for line in data.readlines():
         matrix.append(list(map(int, line.strip().split(' '))))
-
 
     # result = connectedCell(matrix)
     result = fast_find_union(matrix)
