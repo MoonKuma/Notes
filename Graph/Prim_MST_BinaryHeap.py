@@ -221,7 +221,11 @@ def prims(n, edges, start):
     return main(n=n,edges=edges,start=start)
 
 
-test_edges = [[1,2,3],[1,3,4],[4,2,6],[5,2,2],[2,3,5],[3,5,7]]
+# test_edges = [[1,2,3],[1,3,4],[4,2,6],[5,2,2],[2,3,5],[3,5,7]]
+# test_start = 1
+# n =5
+# print(prims(n=n, edges=test_edges,start=test_start))
+test_edges = [[1,2,5],[1,3,3],[4,1,6],[2,4,7],[3,2,4],[3,4,5]]
 test_start = 1
-n =5
+n =4
 print(prims(n=n, edges=test_edges,start=test_start))
